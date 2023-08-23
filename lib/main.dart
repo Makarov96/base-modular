@@ -1,7 +1,10 @@
+import 'package:empty/container.dart';
 import 'package:empty/counter/presenter/screen/counte_screen.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding();
+  await init();
   runApp(const MainApp());
 }
 

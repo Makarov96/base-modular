@@ -4,9 +4,9 @@ class CounterModel extends CounterEntity {
   const CounterModel({
     required super.intCounter,
   });
-  
+
   factory CounterModel.fromJson(Map<String, dynamic> json) => CounterModel(
-        intCounter: json["intCounter"],
+        intCounter: (json["intCounter"] as int).toDouble(),
       );
 
   Map<String, dynamic> toJson() => {
